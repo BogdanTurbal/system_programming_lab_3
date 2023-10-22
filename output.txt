@@ -1,0 +1,92 @@
+<?php
+        $x = 0x12A;;;;
+        $y = 3.14;
+        $348783y = 3.14;
+        $str = "Hello';
+        // This is a comment
+        /* This is
+        hah this is funny f*cking comment
+           another comment */
+        if($x > 10) {
+            echo "Greater";
+        } else {
+            echo "Smaller";
+        }
+        function test() {
+            return true;
+        }
+        ?>
+
+-------------------------
+_____
+        __ _ _________
+        __ _ _____
+        _348783y _ _____
+        ____ _ "Hello'_
+        __ ____ __ _ _______
+        __ ____ __
+        ___ ____ __ _____ _______ _______
+           _______ _______ __
+        _____ _ ___ _
+            ____ __________
+        _ ____ _
+            ____ __________
+        _
+        ________ ______ _
+            ______ _____
+        _
+        __
+
+-------------------------
+Token Type: COMMENT
+/* This is
+        hah this is funny f*cking comment
+           another comment */
+// This is a comment
+---------------------------
+Token Type: STRING_CONST
+"Greater"
+"Smaller"
+---------------------------
+Token Type: STRING_ERROR
+"Hello'
+---------------------------
+Token Type: FLOATING_POINT
+3.14
+---------------------------
+Token Type: HEXADECIMAL
+0x12A
+---------------------------
+Token Type: DECIMAL_NUMBER
+10
+---------------------------
+Token Type: PREPROCESSOR_DIR
+<?php
+?>
+---------------------------
+Token Type: RESERVED_WORD
+echo
+else
+function
+if
+return
+true
+---------------------------
+Token Type: OPERATOR
+=
+>
+---------------------------
+Token Type: PUNCTUATION
+$
+(
+)
+;
+{
+}
+---------------------------
+Token Type: IDENTIFIER
+str
+test
+x
+y
+---------------------------
